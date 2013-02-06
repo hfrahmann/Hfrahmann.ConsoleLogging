@@ -1,0 +1,18 @@
+
+
+TYPO3:
+  ConsoleLogging:
+    # Enable ConsoleLogging in Development context (Default=true)
+    EnableDevelopment: true
+
+    # Enable ConsoleLogging in Production context (Default=false)
+    EnableProduction: false
+
+    # Enable ConsoleLogging for SQL-Querys (Default=false)
+    SqlLogging: true
+
+    # Enable ConsoleLogging for ActionController-Requests (Default=false)
+    ActionControllerLogging: true
+
+    # Enable ConsoleLogging for Request-Infos (Default=false)
+    RequestInfoLogging: true
