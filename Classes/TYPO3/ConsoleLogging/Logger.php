@@ -63,9 +63,9 @@ class Logger {
     public function __construct(\TYPO3\Flow\Object\ObjectManagerInterface $objectManager,
                                 \TYPO3\Flow\Core\Bootstrap $bootstrap,
                                 \TYPO3\ConsoleLogging\Settings $settings) {
-        if($bootstrap->getContext()->isTesting() === TRUE
-        || ($bootstrap->getContext()->isDevelopment() === TRUE && $settings->isDevelopmentEnabled() === TRUE)
-        || ($bootstrap->getContext()->isProduction() === TRUE && $settings->isProductionEnabled() === TRUE)) {
+        if($bootstrap->getContext()->isTesting()        === TRUE
+        || ($bootstrap->getContext()->isDevelopment()   === TRUE && $settings->isDevelopmentEnabled()   === TRUE)
+        || ($bootstrap->getContext()->isProduction()    === TRUE && $settings->isProductionEnabled()    === TRUE)) {
             $this->isEnabled = TRUE;
         }
 
