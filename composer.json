@@ -1,8 +1,16 @@
 {
     "name":"typo3\/consolelogging",
     "type":"typo3-flow-package",
-    "description":"",
+    "description":"A TYPO3 Flow Package for using FirePHP and ChromePHP.",
+    "keywords": ["log", "logging", "firephp", "chromephp", "typo3", "flow", "typo3flow"],
+    "homepage": "https://github.com/hfrahmann/TYPO3.ConsoleLogging",
+    "license": "MIT",
+    "authors":[{
+        "name": "Hendrik Frahmann",
+        "role": "Developer"
+    }],
     "require":{
+        "php": ">=5.3.2",
         "typo3\/flow":"*"
     },
     "autoload":{
