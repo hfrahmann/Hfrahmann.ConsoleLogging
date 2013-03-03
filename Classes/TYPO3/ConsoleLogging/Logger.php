@@ -80,7 +80,7 @@ class Logger {
             $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
         if (strpos($userAgent, 'Firefox') !== FALSE) {
-            // include FirePHP from Package firephp.firephpcore
+            // include FirePHP from Resources
             $firephpPath = $resourcePath
                          . "PHP" . DIRECTORY_SEPARATOR
                          . "FirePHPCore" . DIRECTORY_SEPARATOR
