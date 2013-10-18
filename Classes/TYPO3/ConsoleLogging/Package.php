@@ -2,7 +2,7 @@
 namespace TYPO3\ConsoleLogging;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "TYPO3.Logging".         *
+ * This script belongs to the TYPO3 Flow package "TYPO3.ConsoleLogging".  *
  *                                                                        */
 
 use TYPO3\Flow\Package\Package as BasePackage;
