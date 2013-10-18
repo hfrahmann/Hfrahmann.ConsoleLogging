@@ -72,36 +72,15 @@ class Logger {
         if($this->isEnabled === FALSE)
             return;
 
-        $packageManager = $objectManager->get("TYPO3\\Flow\\Package\\PackageManagerInterface");
-        $resourcePath = $packageManager->getPackage(TYPO3_CONSOLELOGGING_PACKAGEKEY)->getResourcesPath();
-
         $userAgent = '';
         if(array_key_exists('HTTP_USER_AGENT', $_SERVER))
             $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
         if (strpos($userAgent, 'Firefox') !== FALSE) {
-            // include FirePHP from Resources
-            $firephpPath = $resourcePath
-                         . "PHP" . DIRECTORY_SEPARATOR
-                         . "FirePHPCore" . DIRECTORY_SEPARATOR
-                         . "lib" . DIRECTORY_SEPARATOR
-                         . "FirePHPCore" . DIRECTORY_SEPARATOR
-                         . "FirePHP.class.php";
-            if(file_exists($firephpPath))
-                require_once($firephpPath);
-
             $this->consoleClientType = self::CLIENT_FIREPHP;
         }
 
         if (strpos($userAgent, 'Chrome') !== FALSE) {
-            // include ChromePHP from Resources
-            $chromephpPath = $resourcePath
-                           . "PHP" . DIRECTORY_SEPARATOR
-                           . "chromephp" . DIRECTORY_SEPARATOR
-                           . "ChromePhp.php";
-            if(file_exists($chromephpPath))
-                require_once($chromephpPath);
-
             $this->consoleClientType = self::CLIENT_CHROMEPHP;
         }
     }

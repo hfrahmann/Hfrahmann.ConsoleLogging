@@ -19,7 +19,9 @@ class Package extends BasePackage {
      * @return void
      */
     public function boot(\TYPO3\Flow\Core\Bootstrap $bootstrap) {
-        define("TYPO3_CONSOLELOGGING_PACKAGEKEY", "TYPO3.ConsoleLogging");
+        $chromephpPath = FLOW_PATH_PACKAGES . 'Libraries/ccampbell/chromephp/ChromePHP.php';
+        if(file_exists($chromephpPath))
+            require_once($chromephpPath);
 
         parent::boot($bootstrap);
     }

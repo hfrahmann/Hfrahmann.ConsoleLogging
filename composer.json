@@ -10,8 +10,10 @@
         "role": "Developer"
     }],
     "require":{
-        "php": ">=5.3.2",
-        "typo3\/flow":"*"
+        "typo3\/flow":"*",
+        "typo3/classmaploader": "@dev",
+        "ccampbell/chromephp": "@dev",
+        "firephp/firephp-core": "@dev"
     },
     "autoload":{
         "psr-0":{
