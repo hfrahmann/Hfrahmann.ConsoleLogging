@@ -11,7 +11,7 @@
     }],
     "require":{
         "typo3\/flow":"*",
-        "typo3/classmaploader": "@dev",
+        "typo3/classmaploader": "dev-master",
         "ccampbell/chromephp": "@dev",
         "firephp/firephp-core": "@dev"
     },
