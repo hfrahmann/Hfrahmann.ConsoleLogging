@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\ConsoleLogging;
+namespace Hfrahmann\ConsoleLogging;
 
 /*                                                                         *
- * This script belongs to the TYPO3 Flow package "TYPO3.ConsoleLogger".    *
+ * This script belongs to the TYPO3 Flow package "Hfrahmann.ConsoleLogging".    *
  *                                                                         *
  *                                                                         */
 
@@ -58,11 +58,11 @@ class Logger {
     /**
      * @param \TYPO3\Flow\Object\ObjectManagerInterface $objectManager
      * @param \TYPO3\Flow\Core\Bootstrap $bootstrap
-     * @param \TYPO3\ConsoleLogging\Settings $settings
+     * @param \Hfrahmann\ConsoleLogging\Settings $settings
      */
     public function __construct(\TYPO3\Flow\Object\ObjectManagerInterface $objectManager,
                                 \TYPO3\Flow\Core\Bootstrap $bootstrap,
-                                \TYPO3\ConsoleLogging\Settings $settings) {
+                                \Hfrahmann\ConsoleLogging\Settings $settings) {
         if($bootstrap->getContext()->isTesting()        === TRUE
         || ($bootstrap->getContext()->isDevelopment()   === TRUE && $settings->isDevelopmentEnabled()   === TRUE)
         || ($bootstrap->getContext()->isProduction()    === TRUE && $settings->isProductionEnabled()    === TRUE)) {

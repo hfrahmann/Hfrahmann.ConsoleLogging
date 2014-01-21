@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\ConsoleLogging;
+namespace Hfrahmann\ConsoleLogging;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "TYPO3.ConsoleLogging".  *
+ * This script belongs to the TYPO3 Flow package "Hfrahmann.ConsoleLogging".  *
  *                                                                        */
 
 use TYPO3\Flow\Package\Package as BasePackage;
@@ -19,9 +19,9 @@ class Package extends BasePackage {
      * @return void
      */
     public function boot(\TYPO3\Flow\Core\Bootstrap $bootstrap) {
-        $chromephpPath = FLOW_PATH_PACKAGES . 'Libraries/ccampbell/chromephp/ChromePHP.php';
-        if(file_exists($chromephpPath))
-            require_once($chromephpPath);
+        //$chromephpPath = FLOW_PATH_PACKAGES . 'Libraries/ccampbell/chromephp/ChromePHP.php';
+        //if(file_exists($chromephpPath))
+        //    require_once($chromephpPath);
 
         parent::boot($bootstrap);
     }

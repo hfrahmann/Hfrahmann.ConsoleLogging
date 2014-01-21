@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\ConsoleLogging;
+namespace Hfrahmann\ConsoleLogging;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "TYPO3.ConsoleLogging"   *
+ * This script belongs to the TYPO3 Flow package "Hfrahmann.ConsoleLogging"   *
  *                                                                        */
 
 use TYPO3\Flow\Annotations as Flow;
@@ -15,26 +15,26 @@ use TYPO3\Flow\Annotations as Flow;
 class LoggingAspect {
 
     /**
-     * @var \TYPO3\ConsoleLogging\Settings $settings
+     * @var \Hfrahmann\ConsoleLogging\Settings $settings
      */
     protected $settings;
 
     /**
-     * @var \TYPO3\ConsoleLogging\Logger
+     * @var \Hfrahmann\ConsoleLogging\Logger
      */
     protected $consoleLog;
 
     /**
-     * @param Settings $settings
+     * @param \Hfrahmann\ConsoleLogging\Settings $settings
      */
-    public function __construct(\TYPO3\ConsoleLogging\Settings $settings) {
+    public function __construct(\Hfrahmann\ConsoleLogging\Settings $settings) {
         $this->settings = $settings;
     }
 
     /**
      * @param Logger $consoleLog
      */
-    public function injectConsoleLog(\TYPO3\ConsoleLogging\Logger $consoleLog) {
+    public function injectConsoleLog(\Hfrahmann\ConsoleLogging\Logger $consoleLog) {
         $this->consoleLog = $consoleLog;
         $this->logRequestInfo();
     }

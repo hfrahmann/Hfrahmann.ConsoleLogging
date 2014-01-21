@@ -1,4 +1,4 @@
-TYPO3.ConsoleLogging
+Hfrahmann.ConsoleLogging
 ========================
 
 A Console-Logging-Package for TYPO3 Flow with FirePHP and ChromePHP
@@ -9,7 +9,7 @@ Configuration
 Add this to your Settings.yaml
 
 ``` yaml
-TYPO3:
+Hfrahmann:
   ConsoleLogging:
     # Enable ConsoleLogging in Development context (Default=true)
     EnableDevelopment: true
@@ -35,7 +35,7 @@ Example
 class MyTYPO3FlowClass {
 
     /**
-     * @var \TYPO3\ConsoleLogging\Logger
+     * @var \Hfrahmann\ConsoleLogging\Logger
      * @Flow\Inject
      */
     protected $consoleLog;

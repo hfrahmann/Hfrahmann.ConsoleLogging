@@ -1,9 +1,9 @@
 {
-    "name":"typo3\/consolelogging",
+    "name":"hfrahmann\/consolelogging",
     "type":"typo3-flow-package",
     "description":"A TYPO3 Flow Package for using FirePHP and ChromePHP",
     "keywords": ["log", "logging", "firephp", "chromephp", "typo3", "flow", "typo3flow"],
-    "homepage": "https://github.com/hfrahmann/TYPO3.ConsoleLogging",
+    "homepage": "https://github.com/hfrahmann/Hfrahmann.ConsoleLogging",
     "license": "MIT",
     "authors":[{
         "name": "Hendrik Frahmann",
@@ -11,13 +11,13 @@
     }],
     "require":{
         "typo3\/flow":"*",
-        "typo3/classmaploader": "dev-master",
+        "hfrahmann/classmaploader": "dev-master",
         "ccampbell/chromephp": "@dev",
         "firephp/firephp-core": "@dev"
     },
     "autoload":{
         "psr-0":{
-            "TYPO3\\ConsoleLogging":"Classes"
+            "Hfrahmann\\ConsoleLogging":"Classes"
         }
     }
 }

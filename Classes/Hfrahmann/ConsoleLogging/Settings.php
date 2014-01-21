@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\ConsoleLogging;
+namespace Hfrahmann\ConsoleLogging;
 
 /*                                                                         *
- * This script belongs to the TYPO3 Flow package "TYPO3.ConsoleLogger".    *
+ * This script belongs to the TYPO3 Flow package "Hfrahmann.ConsoleLogging".    *
  *                                                                         *
  *                                                                         */
 

@@ -1,6 +1,6 @@
 
 
-TYPO3:
+Hfrahmann:
   ConsoleLogging:
     # Enable ConsoleLogging in Development context (Default=true)
     EnableDevelopment: true
