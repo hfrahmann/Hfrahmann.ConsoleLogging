@@ -5,13 +5,13 @@
     "keywords": ["log", "logging", "firephp", "chromephp", "typo3", "flow", "typo3flow"],
     "homepage": "https://github.com/hfrahmann/Hfrahmann.ConsoleLogging",
     "license": "MIT",
+    "version": "1.0",
     "authors":[{
         "name": "Hendrik Frahmann",
         "role": "Developer"
     }],
     "require":{
         "typo3\/flow":"*",
-        "hfrahmann/classmaploader": "dev-master",
         "ccampbell/chromephp": "@dev",
         "firephp/firephp-core": "@dev"
     },
