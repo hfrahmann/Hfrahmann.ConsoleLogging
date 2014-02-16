@@ -12,6 +12,7 @@
     }],
     "require":{
         "typo3\/flow":"*",
+        "hfrahmann/classmaploader":"*",
         "ccampbell/chromephp": "@dev",
         "firephp/firephp-core": "@dev"
     },
