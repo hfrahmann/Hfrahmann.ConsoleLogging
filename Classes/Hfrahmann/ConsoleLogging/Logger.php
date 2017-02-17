@@ -149,7 +149,7 @@ class Logger {
                 if($collapsed === TRUE)
                     \ChromePhp::groupCollapsed($label);
                 else
-                    \ChromePHP::group($label);
+                    \ChromePhp::group($label);
                 break;
         }
     }
